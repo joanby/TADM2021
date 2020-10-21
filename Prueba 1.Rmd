@@ -11,7 +11,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-reticulate::use_python("/opt/anaconda3/bin/python") 
+reticulate::use_python("/opt/anaconda3/bin/python")  
 ```
 
 ## R Markdown
@@ -43,4 +43,33 @@ import matplotlib.pyplot as plt
 
 plt.plot([1,2,3], [1,5,20])
 ```
+
+
+## Mis funciones
+
+Queremos crear la función:
+
+$$
+f(x) = 5\cdot x^2
+$$
+En `R` se define como:
+
+```{r}
+cinco_x_cuadrado <- function(x){
+  5*x^2
+}
+```
+
+
+```{r evaluar_x_cuadrado, echo = FALSE, results='hide'}
+cinco_x_cuadrado(3) -> res
+```
+
+
+Y si evaluamos $f(3)$ da como resultado `r res`.
+
+
+
+
+
 
