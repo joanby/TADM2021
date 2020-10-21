@@ -11,6 +11,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+reticulate::use_python("/opt/anaconda3/bin/python") 
 ```
 
 ## R Markdown
@@ -32,3 +33,14 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+$$
+\int_0^1 x^2\ dx
+$$
+
+```{python}
+import matplotlib.pyplot as plt
+
+plt.plot([1,2,3], [1,5,20])
+```
+
