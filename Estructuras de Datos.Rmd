@@ -1,0 +1,24 @@
+---
+title: "Estructuras de Datos"
+author: "Juan Gabriel Gomila"
+date: "10/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#Configuración básica del fichero debería venir aquí
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Vectores
+
+Todos los objetos que el vector contiene deben ser del mismo tipo.
+
+* lógicos o booleanos (`logical`) `TRUE` o `FALSE`
+* numérico:  `integer`, `numeric`, `complex`,...
+* string: `character`
+
+
+# Listas
+
+
